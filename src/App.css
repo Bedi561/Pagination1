@@ -1,0 +1,93 @@
+/* App.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styling */
+div {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Pagination Buttons */
+div > div {
+  margin-top: 20px;
+}
+
+button {
+  background: none;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 5px;
+}
+
+button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  button {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}
